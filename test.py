@@ -21,7 +21,7 @@ DB_URL = (st.secrets.get("DATABASE_URL") if "DATABASE_URL" in st.secrets else os
 
 # Supabase REST fallback settings (for networks that block port 5432)
 SUPABASE_URL = st.secrets.get("SUPABASE_URL", os.getenv("SUPABASE_URL", "https://hzyzqmyabfqagcxdwjti.supabase.co"))
-SUPABASE_KEY = st.secrets.get("SUPABASE_KEY", os.getenv("SUPABASE_KEY", ""))
+SUPABASE_KEY = st.secrets.get("SUPABASE_KEY", os.getenv("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imh6eXpxbXlhYmZxYWdjeGR3anRpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM0NzczODYsImV4cCI6MjA3OTA1MzM4Nn0.Rsw12yoUq7Hh1GgvAIw8tCAd8z-cPVM3c8VVHw6d9HU"))
 
 # ---------- Engine creation with IPv4 hostaddr workaround ----------
 try:
